@@ -1095,10 +1095,10 @@ public class TestPlantin {
 
 
 
-    @After
-    public void tearDown(){
-        if (driver != null){
-            driver.quit();
-        }
-    }
+//    @After
+//    public void tearDown(){
+//        if (driver != null){
+//            driver.quit();
+//        }
+//    }
 }
