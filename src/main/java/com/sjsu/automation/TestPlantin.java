@@ -199,57 +199,6 @@ public class TestPlantin {
         }
         dismissScreen();
     }
-//    @Test
-//    public void testCaseTestLoop() throws Exception{
-//        setUpHelper();// Navigate to directory with plant photos
-//
-//        MobileElement container = (MobileElement) driver.findElementById("com.google.android.documentsui:id/dir_list");
-//
-//        // Get and print attributes of the container
-//        String classAttribute = container.getAttribute("class");
-//        String resourceId = container.getAttribute("resource-id");
-//        String contentDesc = container.getAttribute("content-desc");
-//        String containerSize = container.getSize().toString();
-//        String containerLocation = container.getLocation().toString();
-//
-//        // Printing the container's information
-//        System.out.println("Container Class: " + classAttribute);
-//        System.out.println("Container Resource ID: " + resourceId);
-//        System.out.println("Container Content Description: " + contentDesc);
-//        System.out.println("Container Size: " + containerSize);
-//        System.out.println("Container Location: " + containerLocation);
-//
-//        List<MobileElement> items = container.findElements(By.xpath(".//android.widget.LinearLayout"));
-//
-//
-//        // Iterate over each element and print the text
-//        for (MobileElement item : items) {
-//            String itemContentDesc = item.getAttribute("content-desc");
-//            System.out.println("Item content description: " + itemContentDesc);
-//        }
-////        try {
-////            MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (1).png, 2.49 MB, Apr 23\"]"));
-////            plantPicture.click();
-////            System.out.println("Button clicked successfully.");
-////        } catch (Exception e) {
-////            System.out.println("Error in clicking the button: " + e.getMessage());
-////        }
-////        Thread.sleep(6000); // Allow time for scan to occur
-////        try {
-////            // Get the text from the planeName element
-////            MobileElement plantNameElement = (MobileElement) driver.findElementById("com.myplantin.app:id/tvPlantName");
-////            String plantName = plantNameElement.getText();
-////            System.out.println("Found plant name: " + plantName);
-////
-////            // Assert that the plant name is "Sunflower"
-////            Assert.assertEquals("Sunflower", plantName);
-////            System.out.println("Test passed: The plant name is correctly 'Sunflower'.");
-////        } catch (Exception e) {
-////            System.out.println("Error in test execution: " + e.getMessage());
-////            Assert.fail("Test failed due to an exception.");
-////        }
-////        dismissScreen();
-//    }
 
 
     @Test
@@ -1145,27 +1094,11 @@ public class TestPlantin {
 
 
 
-//    @After
-//    public void testClosingLoginScreen() {
-//        System.out.println("The app should now be open on the device.");
-//
-//        // Assuming the 'X' button has an ID 'btnClose'
-//        try {
-//            MobileElement closeButton = driver.findElementById("com.myplantin.app:id/btnClose");
-//            closeButton.click();
-//            System.out.println("Clicked on the 'X' button to close the login screen.");
-//
-//            // Optional: Add assertions or checks to confirm the new screen is displayed after the click
-//        } catch (Exception e) {
-//            System.out.println("Failed to click on 'X' button: " + e.getMessage());
-//        }
-//    }
 
-
-//    @After
-//    public void tearDown(){
-//        if (driver != null){
-//            driver.quit();
-//        }
-//    }
+    @After
+    public void tearDown(){
+        if (driver != null){
+            driver.quit();
+        }
+    }
 }
