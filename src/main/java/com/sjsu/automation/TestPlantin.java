@@ -92,7 +92,10 @@ public class TestPlantin {
 
     private void setUpHelper() throws Exception {
 
-        //TODO check for plant-photos here
+
+        // Define the XPath for the TextView that should contain "plant-photos" to check to see if we are already in the directory
+        String titleXPath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView";
+
 
         Thread.sleep(3000);
         // Press scan button
@@ -111,6 +114,20 @@ public class TestPlantin {
         } catch (Exception e) {
             System.out.println("Error in clicking the button: " + e.getMessage());
         }
+
+        Thread.sleep(1000);
+
+        // Get the title directory's name to check to see if we are already in "plant-photos"
+        MobileElement titleElement = (MobileElement) driver.findElement(By.xpath(titleXPath));
+        String pageTitle = titleElement.getText();
+
+        // If we are in plant-photos, skip navigation
+        if (pageTitle.equalsIgnoreCase("plant-photos")) {
+            System.out.println("Already in the 'plant-photos' directory, skipping navigation.");
+            return; // Exit the method early
+        }
+
+
         Thread.sleep(1000);
         // Press hamburger menu button
         try {
