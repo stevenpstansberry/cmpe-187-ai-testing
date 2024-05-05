@@ -7,11 +7,10 @@
     <list default="true" id="47fb9f9d-bf6d-4f88-9d12-08b27f2cbcf2" name="Changes" comment="Created infrastructure for test cases for PlantIn. Created two test cases in TestPlantin.java">
       <change afterPath="$PROJECT_DIR$/../CS_166/CS_166.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SeniorProjectWebsite/.idea/SeniorProjectWebsite.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sjsu/automation/TestPictureThis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sjsu/automation/TestPlantum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sjsu/automation/TestPlantin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sjsu/automation/TestPlantin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sjsu/automation/TestPictureThis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sjsu/automation/TestPictureThis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sjsu/automation/TestPlantum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sjsu/automation/TestPlantum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +162,7 @@
       <workItem from="1714421990167" duration="9387000" />
       <workItem from="1714524064055" duration="49000" />
       <workItem from="1714596091099" duration="11489000" />
-      <workItem from="1714850104157" duration="20311000" />
+      <workItem from="1714850104157" duration="22765000" />
     </task>
     <servers />
   </component>

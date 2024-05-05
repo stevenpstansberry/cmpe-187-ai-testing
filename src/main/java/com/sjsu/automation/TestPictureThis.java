@@ -41,4 +41,7 @@ public class TestPictureThis {
             System.out.println("Error connecting to Appium server: " + e.getMessage());
         }
     }
+
+
+
 }
