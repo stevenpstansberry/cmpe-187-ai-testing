@@ -91,6 +91,9 @@ public class TestPlantin {
 
 
     private void setUpHelper() throws Exception {
+
+        //TODO check for plant-photos here
+
         Thread.sleep(3000);
         // Press scan button
         try {
@@ -1082,6 +1085,40 @@ public class TestPlantin {
             boolean isCorrectName = "Balloon Flower".equals(plantName) || "Platycodon".equals(plantName);
             Assert.assertTrue("Test failed: The plant name should be 'Balloon Flower' or 'Platycodon'. Found: " + plantName, isCorrectName);
             System.out.println("Test passed: The plant name is correctly '" + plantName + "'.");
+        } catch (Exception e) {
+            System.out.println("Error in test execution: " + e.getMessage());
+            Assert.fail("Test failed due to an exception.");
+        }
+        dismissScreen();
+    }
+
+    @Test
+    /**
+     * Corresponds to Test Case ID#1
+     * Context Case #C1 (Similar Background)
+     * Input Case #I15
+     * Expected: Sunflower
+     */
+    public void testCase27() throws Exception{
+        setUpHelper();// Navigate to directory with plant photos
+        scrollDown();
+        try {
+            MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"unnamed.png, 183 kB, Apr 23\"]\n"));
+            plantPicture.click();
+            System.out.println("Button clicked successfully.");
+        } catch (Exception e) {
+            System.out.println("Error in clicking the button: " + e.getMessage());
+        }
+        Thread.sleep(6000); // Allow time for scan to occur
+        try {
+            // Get the text from the planeName element
+            MobileElement plantNameElement = (MobileElement) driver.findElementById("com.myplantin.app:id/tvPlantName");
+            String plantName = plantNameElement.getText();
+            System.out.println("Found plant name: " + plantName);
+
+            // Assert that the plant name is "Sunflower"
+            Assert.assertEquals("Sunflower", plantName);
+            System.out.println("Test passed: The plant name is correctly 'Sunflower'.");
         } catch (Exception e) {
             System.out.println("Error in test execution: " + e.getMessage());
             Assert.fail("Test failed due to an exception.");

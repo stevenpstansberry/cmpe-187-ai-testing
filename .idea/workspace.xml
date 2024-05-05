@@ -60,39 +60,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestPlantin.testCase25">
-    <configuration name="TestPlantin.testCase21" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cmpe-187-ai-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sjsu.automation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sjsu.automation" />
-      <option name="MAIN_CLASS_NAME" value="com.sjsu.automation.TestPlantin" />
-      <option name="METHOD_NAME" value="testCase21" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestPlantin.testCase22" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cmpe-187-ai-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sjsu.automation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sjsu.automation" />
-      <option name="MAIN_CLASS_NAME" value="com.sjsu.automation.TestPlantin" />
-      <option name="METHOD_NAME" value="testCase22" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestPlantin.testCase27">
     <configuration name="TestPlantin.testCase23" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cmpe-187-ai-testing" />
       <extension name="coverage">
@@ -141,13 +109,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestPlantin.testCase26" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cmpe-187-ai-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sjsu.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sjsu.automation" />
+      <option name="MAIN_CLASS_NAME" value="com.sjsu.automation.TestPlantin" />
+      <option name="METHOD_NAME" value="testCase26" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPlantin.testCase27" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cmpe-187-ai-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sjsu.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sjsu.automation" />
+      <option name="MAIN_CLASS_NAME" value="com.sjsu.automation.TestPlantin" />
+      <option name="METHOD_NAME" value="testCase27" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestPlantin.testCase27" />
+        <item itemvalue="JUnit.TestPlantin.testCase26" />
         <item itemvalue="JUnit.TestPlantin.testCase25" />
         <item itemvalue="JUnit.TestPlantin.testCase24" />
         <item itemvalue="JUnit.TestPlantin.testCase23" />
-        <item itemvalue="JUnit.TestPlantin.testCase22" />
-        <item itemvalue="JUnit.TestPlantin.testCase21" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +163,7 @@
       <workItem from="1714421990167" duration="9387000" />
       <workItem from="1714524064055" duration="49000" />
       <workItem from="1714596091099" duration="11489000" />
-      <workItem from="1714850104157" duration="16296000" />
+      <workItem from="1714850104157" duration="16810000" />
     </task>
     <servers />
   </component>
