@@ -7,9 +7,10 @@
     <list default="true" id="47fb9f9d-bf6d-4f88-9d12-08b27f2cbcf2" name="Changes" comment="Created infrastructure for test cases for PlantIn. Created two test cases in TestPlantin.java">
       <change afterPath="$PROJECT_DIR$/../CS_166/CS_166.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SeniorProjectWebsite/.idea/SeniorProjectWebsite.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sjsu/automation/PlantTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sjsu/automation/TestPlantSnap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sjsu/automation/TestPictureThis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sjsu/automation/TestPictureThis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sjsu/automation/TestPlantum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sjsu/automation/TestPlantum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +62,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestPlantum">
+  <component name="RunManager" selected="JUnit.TestPlantum.testCase1">
     <configuration name="TestPictureThis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cmpe-187-ai-testing" />
       <extension name="coverage">
@@ -77,7 +78,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPlantin.testCase13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPlantSnap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cmpe-187-ai-testing" />
       <extension name="coverage">
         <pattern>
@@ -86,41 +87,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sjsu.automation" />
-      <option name="MAIN_CLASS_NAME" value="com.sjsu.automation.TestPlantin" />
-      <option name="METHOD_NAME" value="testCase13" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestPlantin.testCase20" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cmpe-187-ai-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sjsu.automation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sjsu.automation" />
-      <option name="MAIN_CLASS_NAME" value="com.sjsu.automation.TestPlantin" />
-      <option name="METHOD_NAME" value="testCase20" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestPlantin.testCase23" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cmpe-187-ai-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sjsu.automation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sjsu.automation" />
-      <option name="MAIN_CLASS_NAME" value="com.sjsu.automation.TestPlantin" />
-      <option name="METHOD_NAME" value="testCase23" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.sjsu.automation.TestPlantSnap" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,13 +108,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestPlantum.setup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cmpe-187-ai-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sjsu.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sjsu.automation" />
+      <option name="MAIN_CLASS_NAME" value="com.sjsu.automation.TestPlantum" />
+      <option name="METHOD_NAME" value="setup" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPlantum.testCase1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cmpe-187-ai-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sjsu.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sjsu.automation" />
+      <option name="MAIN_CLASS_NAME" value="com.sjsu.automation.TestPlantum" />
+      <option name="METHOD_NAME" value="testCase1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestPlantum.testCase1" />
+        <item itemvalue="JUnit.TestPlantum.setup" />
+        <item itemvalue="JUnit.TestPlantSnap" />
         <item itemvalue="JUnit.TestPlantum" />
         <item itemvalue="JUnit.TestPictureThis" />
-        <item itemvalue="JUnit.TestPlantin.testCase23" />
-        <item itemvalue="JUnit.TestPlantin.testCase20" />
-        <item itemvalue="JUnit.TestPlantin.testCase13" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +162,7 @@
       <workItem from="1714421990167" duration="9387000" />
       <workItem from="1714524064055" duration="49000" />
       <workItem from="1714596091099" duration="11489000" />
-      <workItem from="1714850104157" duration="22765000" />
+      <workItem from="1714850104157" duration="32801000" />
     </task>
     <servers />
   </component>
