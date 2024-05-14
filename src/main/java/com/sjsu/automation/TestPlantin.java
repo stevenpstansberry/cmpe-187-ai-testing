@@ -1445,6 +1445,293 @@ public class TestPlantin {
         dismissScreen();
     } 
 
+    @Test
+    /**
+     * Corresponds to Test Case ID#38
+     * Context Case #10 (Bright light)
+     * Expected: Mango Tree
+     */
+    public void testCase1() throws Exception{
+        setUpHelper();// Navigate to directory with plant photos
+        try {
+            MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (37).png, 89 KB, May 13\"]"));
+            plantPicture.click();
+            System.out.println("Button clicked successfully.");
+        } catch (Exception e) {
+            System.out.println("Error in clicking the button: " + e.getMessage());
+        }
+        Thread.sleep(6000); // Allow time for scan to occur
+        try {
+            // Get the text from the planeName element
+            MobileElement plantNameElement = (MobileElement) driver.findElementById("com.myplantin.app:id/tvPlantName");
+            String plantName = plantNameElement.getText();
+            System.out.println("Found plant name: " + plantName);
+
+            // Assert that the plant name 
+            Assert.assertEquals("Mango Tree", plantName);
+            System.out.println("Test passed: The plant name is correctly 'Mango Tree'.");
+        } catch (Exception e) {
+            System.out.println("Error in test execution: " + e.getMessage());
+            Assert.fail("Test failed due to an exception.");
+        }
+        dismissScreen();
+    }
+
+    @Test
+    /**
+     * Corresponds to Test Case ID#39
+     * Context Case #11 (Bright light)
+     * Expected: Tiger Tooth Aloe
+     */
+    public void testCase1() throws Exception{
+        setUpHelper();// Navigate to directory with plant photos
+        try {
+            MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (38).png, 420 KB, May 13\"]"));
+            plantPicture.click();
+            System.out.println("Button clicked successfully.");
+        } catch (Exception e) {
+            System.out.println("Error in clicking the button: " + e.getMessage());
+        }
+        Thread.sleep(6000); // Allow time for scan to occur
+        try {
+            // Get the text from the planeName element
+            MobileElement plantNameElement = (MobileElement) driver.findElementById("com.myplantin.app:id/tvPlantName");
+            String plantName = plantNameElement.getText();
+            System.out.println("Found plant name: " + plantName);
+
+            // Assert that the plant name 
+            Assert.assertEquals("Tiger Tooth Aloe", plantName);
+            System.out.println("Test passed: The plant name is correctly 'Tiger Tooth Aloe'.");
+        } catch (Exception e) {
+            System.out.println("Error in test execution: " + e.getMessage());
+            Assert.fail("Test failed due to an exception.");
+        }
+        dismissScreen();
+    }
+
+    @Test
+    /**
+     * Corresponds to Test Case ID#40
+     * Context Case #12 (dark light)
+     * Expected: Tiger Tooth Aloe
+     */
+    public void testCase1() throws Exception{
+        setUpHelper();// Navigate to directory with plant photos
+        try {
+            MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (39).jpeg, 1.2 MB, May 13\"]"));
+            plantPicture.click();
+            System.out.println("Button clicked successfully.");
+        } catch (Exception e) {
+            System.out.println("Error in clicking the button: " + e.getMessage());
+        }
+        Thread.sleep(6000); // Allow time for scan to occur
+        try {
+            // Get the text from the planeName element
+            MobileElement plantNameElement = (MobileElement) driver.findElementById("com.myplantin.app:id/tvPlantName");
+            String plantName = plantNameElement.getText();
+            System.out.println("Found plant name: " + plantName);
+
+            // Assert that the plant name 
+            Assert.assertEquals("Tiger Tooth Aloe", plantName);
+            System.out.println("Test passed: The plant name is correctly 'Tiger Tooth Aloe'.");
+        } catch (Exception e) {
+            System.out.println("Error in test execution: " + e.getMessage());
+            Assert.fail("Test failed due to an exception.");
+        }
+        dismissScreen();
+    }
+
+        @Test
+    /**
+     * Corresponds to Test Case ID#41
+     * Context Case #13 (dark light)
+     * Expected: Echeveria Colorata
+     */
+    public void testCase1() throws Exception{
+        setUpHelper();// Navigate to directory with plant photos
+        try {
+            MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (40).jpeg, 650 KB, May 13\"]"));
+            plantPicture.click();
+            System.out.println("Button clicked successfully.");
+        } catch (Exception e) {
+            System.out.println("Error in clicking the button: " + e.getMessage());
+        }
+        Thread.sleep(6000); // Allow time for scan to occur
+        try {
+            // Get the text from the planeName element
+            MobileElement plantNameElement = (MobileElement) driver.findElementById("com.myplantin.app:id/tvPlantName");
+            String plantName = plantNameElement.getText();
+            System.out.println("Found plant name: " + plantName);
+
+            // Assert that the plant name 
+            Assert.assertEquals("Echeveria Colorata", plantName);
+            System.out.println("Test passed: The plant name is correctly 'Echeveria Colorata'.");
+        } catch (Exception e) {
+            System.out.println("Error in test execution: " + e.getMessage());
+            Assert.fail("Test failed due to an exception.");
+        }
+        dismissScreen();
+    }
+
+    @Test
+    /**
+     * Corresponds to Test Case ID#42
+     * Context Case #14 (high quality)
+     * Expected: California Poppy
+     */
+    public void testCase1() throws Exception{
+        setUpHelper();// Navigate to directory with plant photos
+        try {
+            MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (41).jpeg, 378 KB, May 13\"]"));
+            plantPicture.click();
+            System.out.println("Button clicked successfully.");
+        } catch (Exception e) {
+            System.out.println("Error in clicking the button: " + e.getMessage());
+        }
+        Thread.sleep(6000); // Allow time for scan to occur
+        try {
+            // Get the text from the planeName element
+            MobileElement plantNameElement = (MobileElement) driver.findElementById("com.myplantin.app:id/tvPlantName");
+            String plantName = plantNameElement.getText();
+            System.out.println("Found plant name: " + plantName);
+
+            // Assert that the plant name 
+            Assert.assertEquals("California Poppy", plantName);
+            System.out.println("Test passed: The plant name is correctly 'California Poppy'.");
+        } catch (Exception e) {
+            System.out.println("Error in test execution: " + e.getMessage());
+            Assert.fail("Test failed due to an exception.");
+        }
+        dismissScreen();
+    }
+
+    @Test
+    /**
+     * Corresponds to Test Case ID#43
+     * Context Case #15 (low quality)
+     * Expected: Cherry Tree
+     */
+    public void testCase1() throws Exception{
+        setUpHelper();// Navigate to directory with plant photos
+        try {
+            MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (56).jpeg, 185 KB, May 13\"]"));
+            plantPicture.click();
+            System.out.println("Button clicked successfully.");
+        } catch (Exception e) {
+            System.out.println("Error in clicking the button: " + e.getMessage());
+        }
+        Thread.sleep(6000); // Allow time for scan to occur
+        try {
+            // Get the text from the planeName element
+            MobileElement plantNameElement = (MobileElement) driver.findElementById("com.myplantin.app:id/tvPlantName");
+            String plantName = plantNameElement.getText();
+            System.out.println("Found plant name: " + plantName);
+
+            // Assert that the plant name 
+            Assert.assertEquals("Cherry Tree", plantName);
+            System.out.println("Test passed: The plant name is correctly 'Cherry Tree'.");
+        } catch (Exception e) {
+            System.out.println("Error in test execution: " + e.getMessage());
+            Assert.fail("Test failed due to an exception.");
+        }
+        dismissScreen();
+    }
+
+    @Test
+    /**
+     * Corresponds to Test Case ID#44
+     * Context Case #16 (close distance)
+     * Expected: Mazzard Cherry
+     */
+    public void testCase1() throws Exception{
+        setUpHelper();// Navigate to directory with plant photos
+        try {
+            MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"cherries.jpeg, 147 KB, May 13\"]"));
+            plantPicture.click();
+            System.out.println("Button clicked successfully.");
+        } catch (Exception e) {
+            System.out.println("Error in clicking the button: " + e.getMessage());
+        }
+        Thread.sleep(6000); // Allow time for scan to occur
+        try {
+            // Get the text from the planeName element
+            MobileElement plantNameElement = (MobileElement) driver.findElementById("com.myplantin.app:id/tvPlantName");
+            String plantName = plantNameElement.getText();
+            System.out.println("Found plant name: " + plantName);
+
+            // Assert that the plant name 
+            Assert.assertEquals("Mazzard Cherry", plantName);
+            System.out.println("Test passed: The plant name is correctly 'Mazzard Cherry'.");
+        } catch (Exception e) {
+            System.out.println("Error in test execution: " + e.getMessage());
+            Assert.fail("Test failed due to an exception.");
+        }
+        dismissScreen();
+    }
+
+    @Test
+    /**
+     * Corresponds to Test Case ID#45
+     * Context Case #17 (optimal distance)
+     * Expected: California Poppy
+     */
+    public void testCase1() throws Exception{
+        setUpHelper();// Navigate to directory with plant photos
+        try {
+            MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (42).jpeg, 1.7 MB, May 13\"]"));
+            plantPicture.click();
+            System.out.println("Button clicked successfully.");
+        } catch (Exception e) {
+            System.out.println("Error in clicking the button: " + e.getMessage());
+        }
+        Thread.sleep(6000); // Allow time for scan to occur
+        try {
+            // Get the text from the planeName element
+            MobileElement plantNameElement = (MobileElement) driver.findElementById("com.myplantin.app:id/tvPlantName");
+            String plantName = plantNameElement.getText();
+            System.out.println("Found plant name: " + plantName);
+
+            // Assert that the plant name 
+            Assert.assertEquals("California Poppy", plantName);
+            System.out.println("Test passed: The plant name is correctly 'California Poppy'.");
+        } catch (Exception e) {
+            System.out.println("Error in test execution: " + e.getMessage());
+            Assert.fail("Test failed due to an exception.");
+        }
+        dismissScreen();
+    }
+    
+    @Test
+    /**
+     * Corresponds to Test Case ID#46
+     * Context Case #18 (far distance)
+     * Expected: California Poppy
+     */
+    public void testCase1() throws Exception{
+        setUpHelper();// Navigate to directory with plant photos
+        try {
+            MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (43).jpg_large, 921 KB, May 13\"]"));
+            plantPicture.click();
+            System.out.println("Button clicked successfully.");
+        } catch (Exception e) {
+            System.out.println("Error in clicking the button: " + e.getMessage());
+        }
+        Thread.sleep(6000); // Allow time for scan to occur
+        try {
+            // Get the text from the planeName element
+            MobileElement plantNameElement = (MobileElement) driver.findElementById("com.myplantin.app:id/tvPlantName");
+            String plantName = plantNameElement.getText();
+            System.out.println("Found plant name: " + plantName);
+
+            // Assert that the plant name 
+            Assert.assertEquals("California Poppy", plantName);
+            System.out.println("Test passed: The plant name is correctly 'California Poppy'.");
+        } catch (Exception e) {
+            System.out.println("Error in test execution: " + e.getMessage());
+            Assert.fail("Test failed due to an exception.");
+        }
+        dismissScreen();
+    }
 
 
 
