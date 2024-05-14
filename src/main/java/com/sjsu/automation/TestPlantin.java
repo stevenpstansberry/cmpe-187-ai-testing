@@ -1098,7 +1098,7 @@ public class TestPlantin {
      * Context Case #2 (Similar Background)
      * Expected: Echeveria Colorata
      */
-    public void testCase1() throws Exception{
+    public void testCase28() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (28).jpeg, 64 KB, May 13\"]"));
@@ -1130,7 +1130,7 @@ public class TestPlantin {
      * Context Case #3 (Similar Background)
      * Expected: Mango Tree
      */
-    public void testCase1() throws Exception{
+    public void testCase29() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (29).jpeg, 233 KB, May 13\"]"));
@@ -1162,7 +1162,7 @@ public class TestPlantin {
      * Context Case #4 (Similar Background)
      * Expected: Balloon Flower
      */
-    public void testCase1() throws Exception{
+    public void testCase30() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (30).jpeg, 131 KB, May 13\"]"));
@@ -1195,7 +1195,7 @@ public class TestPlantin {
      * Context Case #4 (Similar Background)
      * Expected: Sunflower
      */
-    public void testCase1() throws Exception{
+    public void testCase31() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (31).jpeg, 49 KB, May 13\"]"));
@@ -1223,11 +1223,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#31
+     * Corresponds to Test Case ID#32
      * Context Case #4 (Similar Background)
      * Expected: Sunflower
      */
-    public void testCase1() throws Exception{
+    public void testCase32() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (31).jpeg, 49 KB, May 13\"]"));
@@ -1255,11 +1255,11 @@ public class TestPlantin {
 
      @Test
     /**
-     * Corresponds to Test Case ID#32
+     * Corresponds to Test Case ID#33
      * Context Case #5 (Different Background)
      * Expected: Sacred Lotus
      */
-    public void testCase1() throws Exception{
+    public void testCase33() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (32).jpeg, 7 KB, May 13\"]"));
@@ -1287,11 +1287,11 @@ public class TestPlantin {
 
      @Test
     /**
-     * Corresponds to Test Case ID#33
+     * Corresponds to Test Case ID#34
      * Context Case #5 (Different Background)
      * Expected: Tiger Tooth Aloe
      */
-    public void testCase1() throws Exception{
+    public void testCase34() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (27).jpeg, 286 KB, May 13\"]"));
@@ -1319,11 +1319,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#34
+     * Corresponds to Test Case ID#35
      * Context Case #6 (Front Angle)
      * Expected: Water lily
      */
-    public void testCase1() throws Exception{
+    public void testCase35() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (33).jpeg, 224 KB, May 13\"]"));
@@ -1351,11 +1351,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#35
+     * Corresponds to Test Case ID#36
      * Context Case #7 (Front Angle)
      * Expected: Sunflower
      */
-    public void testCase1() throws Exception{
+    public void testCase36() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (34).png, 159 KB, May 13\"]"));
@@ -1383,11 +1383,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#36
+     * Corresponds to Test Case ID#37
      * Context Case #8 (Behind Angle)
      * Expected: Sunflower
      */
-    public void testCase1() throws Exception{
+    public void testCase37() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (35).jpeg, 131 KB, May 13\"]"));
@@ -1415,11 +1415,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#37
+     * Corresponds to Test Case ID#38
      * Context Case #9 (Behind Angle)
      * Expected: Sunflower
      */
-    public void testCase1() throws Exception{
+    public void testCase38() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (36).jpeg, 89 KB, May 13\"]"));
@@ -1447,11 +1447,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#38
+     * Corresponds to Test Case ID#39
      * Context Case #10 (Bright light)
      * Expected: Mango Tree
      */
-    public void testCase1() throws Exception{
+    public void testCase39() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (37).png, 89 KB, May 13\"]"));
@@ -1479,11 +1479,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#39
+     * Corresponds to Test Case ID#40
      * Context Case #11 (Bright light)
      * Expected: Tiger Tooth Aloe
      */
-    public void testCase1() throws Exception{
+    public void testCase40() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (38).png, 420 KB, May 13\"]"));
@@ -1511,11 +1511,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#40
+     * Corresponds to Test Case ID#41
      * Context Case #12 (dark light)
      * Expected: Tiger Tooth Aloe
      */
-    public void testCase1() throws Exception{
+    public void testCase41() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (39).jpeg, 1.2 MB, May 13\"]"));
@@ -1543,11 +1543,11 @@ public class TestPlantin {
 
         @Test
     /**
-     * Corresponds to Test Case ID#41
+     * Corresponds to Test Case ID#42
      * Context Case #13 (dark light)
      * Expected: Echeveria Colorata
      */
-    public void testCase1() throws Exception{
+    public void testCase42() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (40).jpeg, 650 KB, May 13\"]"));
@@ -1575,11 +1575,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#42
+     * Corresponds to Test Case ID#43
      * Context Case #14 (high quality)
      * Expected: California Poppy
      */
-    public void testCase1() throws Exception{
+    public void testCase43() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (41).jpeg, 378 KB, May 13\"]"));
@@ -1607,11 +1607,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#43
+     * Corresponds to Test Case ID#44
      * Context Case #15 (low quality)
      * Expected: Cherry Tree
      */
-    public void testCase1() throws Exception{
+    public void testCase44() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (56).jpeg, 185 KB, May 13\"]"));
@@ -1639,11 +1639,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#44
+     * Corresponds to Test Case ID#45
      * Context Case #16 (close distance)
      * Expected: Mazzard Cherry
      */
-    public void testCase1() throws Exception{
+    public void testCase45() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"cherries.jpeg, 147 KB, May 13\"]"));
@@ -1671,11 +1671,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#45
+     * Corresponds to Test Case ID#46
      * Context Case #17 (optimal distance)
      * Expected: California Poppy
      */
-    public void testCase1() throws Exception{
+    public void testCase46() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (42).jpeg, 1.7 MB, May 13\"]"));
@@ -1703,11 +1703,11 @@ public class TestPlantin {
     
     @Test
     /**
-     * Corresponds to Test Case ID#46
+     * Corresponds to Test Case ID#47
      * Context Case #18 (far distance)
      * Expected: California Poppy
      */
-    public void testCase1() throws Exception{
+    public void testCase47() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (43).jpg_large, 921 KB, May 13\"]"));
@@ -1735,11 +1735,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#47
+     * Corresponds to Test Case ID#48
      * Context Case #19 (Spring) 
      * Expected: Balloon Flower OR Platycodon
      */
-    public void testCase5() throws Exception{
+    public void testCase48() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
@@ -1769,11 +1769,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#48
+     * Corresponds to Test Case ID#49
      * Context Case #20 (Winter)
      * Expected: California Poppy
      */
-    public void testCase1() throws Exception{
+    public void testCase49() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (45).jpeg, 940 KB, May 13\"]"));
@@ -1801,11 +1801,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#49
+     * Corresponds to Test Case ID#50
      * Context Case #21 (Summer)
      * Expected: Sunflower
      */
-    public void testCase1() throws Exception{
+    public void testCase50() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (46).jpeg, 112 KB, May 13\"]"));
@@ -1833,11 +1833,11 @@ public class TestPlantin {
 
         @Test
     /**
-     * Corresponds to Test Case ID#50
+     * Corresponds to Test Case ID#51
      * Context Case #22 (Autumn)
      * Expected: Cherry Tree
      */
-    public void testCase1() throws Exception{
+    public void testCase51() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"cherry_tree.jpeg, 514 KB, May 13\"]"));
@@ -1865,11 +1865,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#51
+     * Corresponds to Test Case ID#52
      * Context Case #23 (Indoor)
      * Expected: Ballon Flower
      */
-    public void testCase5() throws Exception{
+    public void testCase52() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
@@ -1899,11 +1899,11 @@ public class TestPlantin {
     
         @Test
     /**
-     * Corresponds to Test Case ID#52
+     * Corresponds to Test Case ID#53
      * Context Case #24 (outdoor)
      * Expected: Ballon Flower
      */
-    public void testCase5() throws Exception{
+    public void testCase53() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
@@ -1933,11 +1933,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#53
+     * Corresponds to Test Case ID#54
      * Context Case #24 (Full Part)
      * Expected: Sacred Lotus
      */
-    public void testCase5() throws Exception{
+    public void testCase54() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
@@ -1966,11 +1966,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#54
+     * Corresponds to Test Case ID#55
      * Context Case #25 (Stem Part)
      * Expected: Sacred Lotus
      */
-    public void testCase5() throws Exception{
+    public void testCase55() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
@@ -1999,11 +1999,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#55
+     * Corresponds to Test Case ID#56
      * Context Case #26 (Leaf Part)
      * Expected: Sacred Lotus
      */
-    public void testCase5() throws Exception{
+    public void testCase56() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
@@ -2032,11 +2032,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#56
+     * Corresponds to Test Case ID#57
      * Input Case #8 (Succulent - Echeveria)
      * Expected: Echeveria Colorata
      */
-    public void testCase5() throws Exception{
+    public void testCase57() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
@@ -2065,11 +2065,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#57
+     * Corresponds to Test Case ID#58
      * Input Case #9 (Ornamental - Balloon flower)
      * Expected: Balloon Flower 
      */
-    public void testCase5() throws Exception{
+    public void testCase58() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
@@ -2099,11 +2099,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#58
+     * Corresponds to Test Case ID#59
      * Input Case #10 (Aquatic)
      * Expected: Water Lily
      */
-    public void testCase5() throws Exception{
+    public void testCase59() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
@@ -2132,11 +2132,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#59
+     * Corresponds to Test Case ID#60
      * Input Case #11 (Fruiting)
      * Expected: Mango Tree
      */
-    public void testCase5() throws Exception{
+    public void testCase60() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
@@ -2165,11 +2165,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#60
+     * Corresponds to Test Case ID#61
      * Input Case #12 (Affected by season)
      * Expected: Sunflower
      */
-    public void testCase5() throws Exception{
+    public void testCase61() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
@@ -2198,11 +2198,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#61
+     * Corresponds to Test Case ID#62
      * Input Case #13 (No occurrence)
      * Expected: No plant detected
      */
-    public void testCase5() throws Exception{
+    public void testCase62() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
@@ -2231,11 +2231,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#62
+     * Corresponds to Test Case ID#63
      * Input Case #14 (one occurrence)
      * Expected: Tiger Tooth Aloe
      */
-    public void testCase5() throws Exception{
+    public void testCase63() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
@@ -2264,11 +2264,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#63
+     * Corresponds to Test Case ID#64
      * Input Case #15 (multiple occurrence)
      * Expected: California Poppy
      */
-    public void testCase5() throws Exception{
+    public void testCase64() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
@@ -2297,11 +2297,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#64
+     * Corresponds to Test Case ID#65
      * Input Case #16 (unhealthy)
      * Expected: Sacred Lotus
      */
-    public void testCase5() throws Exception{
+    public void testCase65() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
@@ -2330,11 +2330,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#65
+     * Corresponds to Test Case ID#66
      * Input Case #17 (healthy)
      * Expected: Echeveria
      */
-    public void testCase5() throws Exception{
+    public void testCase66() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
@@ -2363,11 +2363,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#66
+     * Corresponds to Test Case ID#67
      * Input Case #18 (juvenile)
      * Expected: Sacred Lotus
      */
-    public void testCase5() throws Exception{
+    public void testCase67() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
@@ -2396,11 +2396,11 @@ public class TestPlantin {
 
     @Test
     /**
-     * Corresponds to Test Case ID#67
+     * Corresponds to Test Case ID#68
      * Input Case #19 (mature)
      * Expected: Rainier Cherry Tree
      */
-    public void testCase5() throws Exception{
+    public void testCase68() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
@@ -2426,15 +2426,6 @@ public class TestPlantin {
         }
         dismissScreen();
     }
-
-    
-
-    
-    
-
-    
-
-
 
 //    @After
 //    public void tearDown(){
