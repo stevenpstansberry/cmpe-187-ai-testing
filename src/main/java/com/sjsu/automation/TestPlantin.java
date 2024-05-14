@@ -11,12 +11,19 @@ import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import java.time.Duration;
 import org.openqa.selenium.By;
+import javax.swing.*;
+import java.awt.*;
+//import javax.speech.Central;
+//import javax.speech.synthesis.Synthesizer;
+//import javax.speech.synthesis.SynthesizerModeDesc;
+
 
 
 
 public class TestPlantin {
 
     AppiumDriver<MobileElement> driver;
+    private static final String VOICE_NAME = "kevin16";
 
     @Before
     //Handles inital set up for plantin
@@ -167,6 +174,39 @@ public class TestPlantin {
         Thread.sleep(1000);
     }
 
+    public static void displayImage(String path) {
+        // Create JFrame
+        JFrame frame = new JFrame("Image Display");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(500, 500);
+
+        ImageIcon imageIcon = new ImageIcon(path);
+
+        Image image = imageIcon.getImage();
+        Image newImage = image.getScaledInstance(frame.getWidth(), frame.getHeight(), Image.SCALE_SMOOTH);
+        imageIcon = new ImageIcon(newImage);
+
+        JLabel label = new JLabel(imageIcon);
+        frame.add(label);
+
+        // Set the frame to visible
+        frame.setVisible(true);
+    }
+
+//    public void speak(String text) {
+//        Voice voice;
+//        VoiceManager voiceManager = VoiceManager.getInstance();
+//        voice = voiceManager.getVoice(VOICE_NAME);
+//
+//        if (voice != null) {
+//            voice.allocate();
+//            voice.speak(text);
+//            voice.deallocate();
+//        } else {
+//            System.out.println("Voice not found.");
+//        }
+//    }
+
     @Test
     /**
      * Corresponds to Test Case ID#2
@@ -175,13 +215,22 @@ public class TestPlantin {
      * Expected: Sunflower
      */
     public void testCase1() throws Exception{
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (1).png";
+        displayImage(imagePath);
+ //       TextToSpeech tts = new TextToSpeech();
+ //       tts.speak("Testing Test Case ID#2: Expected 'Sunflower'");
+        System.out.println("Testing Test Case ID#2: Expected 'Sunflower'");
         setUpHelper();// Navigate to directory with plant photos
+
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (1).png, 2.49 MB, Apr 23\"]"));
             plantPicture.click();
             System.out.println("Button clicked successfully.");
+              //    tts.speak("TButton clicked successfully.");
+
         } catch (Exception e) {
             System.out.println("Error in clicking the button: " + e.getMessage());
+
         }
         Thread.sleep(6000); // Allow time for scan to occur
         try {
@@ -189,10 +238,13 @@ public class TestPlantin {
             MobileElement plantNameElement = (MobileElement) driver.findElementById("com.myplantin.app:id/tvPlantName");
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
+            //    tts.speak("Found plant name: " + plantName);
 
             // Assert that the plant name is "Sunflower"
             Assert.assertEquals("Sunflower", plantName);
             System.out.println("Test passed: The plant name is correctly 'Sunflower'.");
+            //    tts.speak("Test passed: The plant name is correctly 'Sunflower'.");
+
         } catch (Exception e) {
             System.out.println("Error in test execution: " + e.getMessage());
             Assert.fail("Test failed due to an exception.");
@@ -210,6 +262,9 @@ public class TestPlantin {
      */
     public void testCase2() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (10).png";
+        System.out.println("Testing Test Case ID#11: Expected 'Tiger Tooth Aloe'");
+        displayImage(imagePath);
         try {
             // Use the XPath to find the button and click it
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"unnamed (10).png, 1.09 MB, Apr 23\"]"));
@@ -243,6 +298,9 @@ public class TestPlantin {
      */
     public void testCase3() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (11).png";
+        System.out.println("Testing Test Case ID#11: Expected 'Tiger Tooth Aloe'");
+        displayImage(imagePath);
         try {
             // Use the XPath to find the button and click it
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"unnamed (11).png, 1.13 MB, Apr 23\"]\n"));
@@ -277,6 +335,9 @@ public class TestPlantin {
      */
     public void testCase4() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (12).png";
+        System.out.println("Testing Test Case ID#14: Expected 'California Poppy'");
+        displayImage(imagePath);
         try {
             // Use the XPath to find the button and click it
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"unnamed (12).png, 592 kB, Apr 23\"]\n"));
@@ -311,6 +372,9 @@ public class TestPlantin {
      */
     public void testCase5() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (13).png";
+        System.out.println("Testing Test Case ID#15: Expected 'Balloon Flower'");
+        displayImage(imagePath);
         try {
             // Use the XPath to find the button and click it
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"unnamed (13).png, 737 kB, Apr 23\"]"));
@@ -346,6 +410,9 @@ public class TestPlantin {
      */
     public void testCase6() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (14).png";
+        System.out.println("Testing Test Case ID#13: Expected 'Echeveria pulidonis'");
+        displayImage(imagePath);
         try {
             // Use the XPath to find the button and click it
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"unnamed (14).png, 383 kB, Apr 23\"]"));
@@ -380,6 +447,9 @@ public class TestPlantin {
      */
     public void testCase7() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (15).png";
+        System.out.println("Testing Test Case ID6: Expected 'Sunflower'");
+        displayImage(imagePath);
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("\t//android.widget.LinearLayout[@content-desc=\"unnamed (15).png, 0.91 MB, Apr 23\"]"));
             plantPicture.click();
@@ -413,6 +483,9 @@ public class TestPlantin {
      */
     public void testCase8() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (16).png";
+        System.out.println("Testing Test Case ID#7: Expected 'Water Lily'");
+        displayImage(imagePath);
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"unnamed (16).png, 1.26 MB, Apr 23\"]\n"));
             plantPicture.click();
@@ -445,6 +518,9 @@ public class TestPlantin {
      */
     public void testCase9() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (17).png";
+        System.out.println("Testing Test Case ID#8: Expected 'Water Lily'");
+        displayImage(imagePath);
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"unnamed (17).png, 1.75 MB, Apr 23\"]"));
             plantPicture.click();
@@ -479,6 +555,9 @@ public class TestPlantin {
      */
     public void testCase10() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (17).png";
+        System.out.println("Testing Test Case ID#21: Expected 'Sunflowe'");
+        displayImage(imagePath);
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"unnamed (18).png, 554 kB, Apr 23\"]\n"));
             plantPicture.click();
@@ -513,6 +592,9 @@ public class TestPlantin {
      */
     public void testCase11() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (19).png";
+        System.out.println("Testing Test Case ID#22: Expected 'Sunflower'");
+        displayImage(imagePath);
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"unnamed (19).png, 1.38 MB, Apr 23\"]\n"));
             plantPicture.click();
@@ -546,6 +628,9 @@ public class TestPlantin {
      */
     public void testCase12() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (2).png";
+        System.out.println("Testing Test Case ID#22: Expected 'Water lily'");
+        displayImage(imagePath);
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"unnamed (2).png, 3.45 MB, Apr 23\"]\n"));
             plantPicture.click();
@@ -579,6 +664,9 @@ public class TestPlantin {
      */
     public void testCase13() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (20).png";
+        System.out.println("Testing Test Case ID#22: Expected 'Cherry Tree'");
+        displayImage(imagePath);
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"unnamed (20).png, 3.43 MB, Apr 23\"]\n"));
             plantPicture.click();
@@ -612,6 +700,9 @@ public class TestPlantin {
      */
     public void testCase14() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (21).png";
+        System.out.println("Testing Test Case ID#22: Expected 'Mango Tree'");
+        displayImage(imagePath);
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"unnamed (21).png, 270 kB, Apr 23\"]\n"));
             plantPicture.click();
@@ -645,6 +736,9 @@ public class TestPlantin {
      */
     public void testCase15() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (22).png";
+        System.out.println("Testing Test Case ID#22: Expected 'Tiger Tooth Aloe'");
+        displayImage(imagePath);
         try {
             // Use the XPath to find the button and click it
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"unnamed (22).png, 2.09 MB, Apr 23\"]\n"));
@@ -679,6 +773,9 @@ public class TestPlantin {
      */
     public void testCase16() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (23).png";
+        System.out.println("Testing Test Case ID#25: Expected 'Balloon Flower'");
+        displayImage(imagePath);
         scrollDown();
         try {
             // Use the XPath to find the button and click it
@@ -715,6 +812,9 @@ public class TestPlantin {
      */
     public void testCase17() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (24).png";
+        System.out.println("Testing Test Case ID#22: Expected 'Tiger Tooth Aloe'");
+        displayImage(imagePath);
         scrollDown();
         try {
             // Use the XPath to find the button and click it
@@ -749,6 +849,9 @@ public class TestPlantin {
      */
     public void testCase18() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (25).png";
+        System.out.println("Testing Test Case ID#22: Expected 'None'");
+        displayImage(imagePath);
         scrollDown();
         try {
             // Use the XPath to find the button and click it
@@ -784,6 +887,9 @@ public class TestPlantin {
      */
     public void testCase19() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (26).png";
+        System.out.println("Testing Test Case ID#22: Expected 'Balloon Flower'");
+        displayImage(imagePath);
         scrollDown();
         try {
             // Use the XPath to find the button and click it
@@ -820,6 +926,9 @@ public class TestPlantin {
      */
     public void testCase20() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (3).png";
+        System.out.println("Testing Test Case ID#22: Expected 'Sacred Lotus'");
+        displayImage(imagePath);
         scrollDown();
         try {
             // Use the XPath to find the button and click it
@@ -854,6 +963,9 @@ public class TestPlantin {
      */
     public void testCase21() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (4).png";
+        System.out.println("Testing Test Case ID#22: Expected 'California Poppy'");
+        displayImage(imagePath);
         scrollDown();
         try {
             // Use the XPath to find the button and click it
@@ -889,6 +1001,9 @@ public class TestPlantin {
      */
     public void testCase22() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (5).png";
+        System.out.println("Testing Test Case ID#22: Expected 'California Poppy'");
+        displayImage(imagePath);
         scrollDown();
         try {
             // Use the XPath to find the button and click it
@@ -925,6 +1040,9 @@ public class TestPlantin {
      */
     public void testCase23() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (6).png";
+        System.out.println("Testing Test Case ID#22: Expected 'Balloon Flower'");
+        displayImage(imagePath);
         scrollDown();
         try {
             // Use the XPath to find the button and click it
@@ -961,6 +1079,9 @@ public class TestPlantin {
      */
     public void testCase24() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (7).png";
+        System.out.println("Testing Test Case ID#22: Expected 'Tiger Tooth Aloe'");
+        displayImage(imagePath);
         scrollDown();
         try {
             // Use the XPath to find the button and click it
@@ -996,6 +1117,9 @@ public class TestPlantin {
      */
     public void testCase25() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (8).png";
+        System.out.println("Testing Test Case ID#22: Expected 'Tiger Tooth Aloe'");
+        displayImage(imagePath);
         scrollDown();
         try {
             // Use the XPath to find the button and click it
@@ -1031,6 +1155,9 @@ public class TestPlantin {
      */
     public void testCase26() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed (9).png";
+        System.out.println("Testing Test Case ID#22: Expected 'Balloon Flower'");
+        displayImage(imagePath);
         scrollDown();
         try {
             // Use the XPath to find the button and click it
@@ -1067,6 +1194,9 @@ public class TestPlantin {
      */
     public void testCase27() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
+        String imagePath = "C:\\Users\\Steven\\Desktop\\plant-photos\\unnamed.png";
+        System.out.println("Testing Test Case ID#22: Expected 'Tiger Tooth Aloe'");
+        displayImage(imagePath);
         scrollDown();
         try {
             MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"unnamed.png, 183 kB, Apr 23\"]\n"));
@@ -1092,6 +1222,7 @@ public class TestPlantin {
         dismissScreen();
     }
 
+
     @Test
     /**
      * Corresponds to Test Case ID#28
@@ -1114,7 +1245,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Echeveria Colorata", plantName);
             System.out.println("Test passed: The plant name is correctly 'Echeveria Colorata'.");
         } catch (Exception e) {
@@ -1146,7 +1277,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Mango Tree", plantName);
             System.out.println("Test passed: The plant name is correctly 'Mango Tree'.");
         } catch (Exception e) {
@@ -1211,7 +1342,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Sunflower", plantName);
             System.out.println("Test passed: The plant name is correctly 'Sunflower'.");
         } catch (Exception e) {
@@ -1243,7 +1374,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Sunflower", plantName);
             System.out.println("Test passed: The plant name is correctly 'Sunflower'.");
         } catch (Exception e) {
@@ -1253,7 +1384,7 @@ public class TestPlantin {
         dismissScreen();
     }
 
-     @Test
+    @Test
     /**
      * Corresponds to Test Case ID#33
      * Context Case #5 (Different Background)
@@ -1275,7 +1406,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Sacred Lotus", plantName);
             System.out.println("Test passed: The plant name is correctly 'Sacred Lotus'.");
         } catch (Exception e) {
@@ -1285,7 +1416,7 @@ public class TestPlantin {
         dismissScreen();
     }
 
-     @Test
+    @Test
     /**
      * Corresponds to Test Case ID#34
      * Context Case #5 (Different Background)
@@ -1307,7 +1438,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Tiger Tooth Aloe", plantName);
             System.out.println("Test passed: The plant name is correctly 'Tiger Tooth Aloe'.");
         } catch (Exception e) {
@@ -1315,7 +1446,7 @@ public class TestPlantin {
             Assert.fail("Test failed due to an exception.");
         }
         dismissScreen();
-    }    
+    }
 
     @Test
     /**
@@ -1339,7 +1470,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Water Lily", plantName);
             System.out.println("Test passed: The plant name is correctly 'Water Lily'.");
         } catch (Exception e) {
@@ -1347,7 +1478,7 @@ public class TestPlantin {
             Assert.fail("Test failed due to an exception.");
         }
         dismissScreen();
-    }    
+    }
 
     @Test
     /**
@@ -1371,7 +1502,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Sunflower", plantName);
             System.out.println("Test passed: The plant name is correctly 'Sunflower'.");
         } catch (Exception e) {
@@ -1379,7 +1510,7 @@ public class TestPlantin {
             Assert.fail("Test failed due to an exception.");
         }
         dismissScreen();
-    }    
+    }
 
     @Test
     /**
@@ -1403,7 +1534,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Sunflower", plantName);
             System.out.println("Test passed: The plant name is correctly 'Sunflower'.");
         } catch (Exception e) {
@@ -1411,7 +1542,7 @@ public class TestPlantin {
             Assert.fail("Test failed due to an exception.");
         }
         dismissScreen();
-    } 
+    }
 
     @Test
     /**
@@ -1435,7 +1566,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Sunflower", plantName);
             System.out.println("Test passed: The plant name is correctly 'Sunflower'.");
         } catch (Exception e) {
@@ -1443,7 +1574,7 @@ public class TestPlantin {
             Assert.fail("Test failed due to an exception.");
         }
         dismissScreen();
-    } 
+    }
 
     @Test
     /**
@@ -1467,7 +1598,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Mango Tree", plantName);
             System.out.println("Test passed: The plant name is correctly 'Mango Tree'.");
         } catch (Exception e) {
@@ -1499,7 +1630,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Tiger Tooth Aloe", plantName);
             System.out.println("Test passed: The plant name is correctly 'Tiger Tooth Aloe'.");
         } catch (Exception e) {
@@ -1531,7 +1662,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Tiger Tooth Aloe", plantName);
             System.out.println("Test passed: The plant name is correctly 'Tiger Tooth Aloe'.");
         } catch (Exception e) {
@@ -1541,7 +1672,7 @@ public class TestPlantin {
         dismissScreen();
     }
 
-        @Test
+    @Test
     /**
      * Corresponds to Test Case ID#42
      * Context Case #13 (dark light)
@@ -1563,7 +1694,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Echeveria Colorata", plantName);
             System.out.println("Test passed: The plant name is correctly 'Echeveria Colorata'.");
         } catch (Exception e) {
@@ -1595,7 +1726,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("California Poppy", plantName);
             System.out.println("Test passed: The plant name is correctly 'California Poppy'.");
         } catch (Exception e) {
@@ -1627,7 +1758,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Cherry Tree", plantName);
             System.out.println("Test passed: The plant name is correctly 'Cherry Tree'.");
         } catch (Exception e) {
@@ -1659,7 +1790,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Mazzard Cherry", plantName);
             System.out.println("Test passed: The plant name is correctly 'Mazzard Cherry'.");
         } catch (Exception e) {
@@ -1691,7 +1822,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("California Poppy", plantName);
             System.out.println("Test passed: The plant name is correctly 'California Poppy'.");
         } catch (Exception e) {
@@ -1700,7 +1831,7 @@ public class TestPlantin {
         }
         dismissScreen();
     }
-    
+
     @Test
     /**
      * Corresponds to Test Case ID#47
@@ -1723,7 +1854,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("California Poppy", plantName);
             System.out.println("Test passed: The plant name is correctly 'California Poppy'.");
         } catch (Exception e) {
@@ -1736,7 +1867,7 @@ public class TestPlantin {
     @Test
     /**
      * Corresponds to Test Case ID#48
-     * Context Case #19 (Spring) 
+     * Context Case #19 (Spring)
      * Expected: Balloon Flower OR Platycodon
      */
     public void testCase48() throws Exception{
@@ -1789,7 +1920,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("California Poppy", plantName);
             System.out.println("Test passed: The plant name is correctly 'California Poppy'.");
         } catch (Exception e) {
@@ -1821,7 +1952,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Sunflower", plantName);
             System.out.println("Test passed: The plant name is correctly 'Sunflower'.");
         } catch (Exception e) {
@@ -1831,7 +1962,7 @@ public class TestPlantin {
         dismissScreen();
     }
 
-        @Test
+    @Test
     /**
      * Corresponds to Test Case ID#51
      * Context Case #22 (Autumn)
@@ -1853,7 +1984,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Cherry Tree", plantName);
             System.out.println("Test passed: The plant name is correctly 'Cherry Tree'.");
         } catch (Exception e) {
@@ -1896,8 +2027,8 @@ public class TestPlantin {
         }
         dismissScreen();
     }
-    
-        @Test
+
+    @Test
     /**
      * Corresponds to Test Case ID#53
      * Context Case #24 (outdoor)
@@ -1954,7 +2085,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Sacred Lotus", plantName);
             System.out.println("Test passed: The plant name is correctly 'Sacred Lotus'.");
         } catch (Exception e) {
@@ -1987,7 +2118,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Sacred Lotus", plantName);
             System.out.println("Test passed: The plant name is correctly 'Sacred Lotus'.");
         } catch (Exception e) {
@@ -2020,7 +2151,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Sacred Lotus", plantName);
             System.out.println("Test passed: The plant name is correctly 'Sacred Lotus'.");
         } catch (Exception e) {
@@ -2053,7 +2184,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Echeveria Colorata", plantName);
             System.out.println("Test passed: The plant name is correctly 'Echeveria Colorata'.");
         } catch (Exception e) {
@@ -2067,7 +2198,7 @@ public class TestPlantin {
     /**
      * Corresponds to Test Case ID#58
      * Input Case #9 (Ornamental - Balloon flower)
-     * Expected: Balloon Flower 
+     * Expected: Balloon Flower
      */
     public void testCase58() throws Exception{
         setUpHelper();// Navigate to directory with plant photos
@@ -2120,7 +2251,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Water Lily", plantName);
             System.out.println("Test passed: The plant name is correctly 'Water Lily'.");
         } catch (Exception e) {
@@ -2153,7 +2284,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Mango Tree", plantName);
             System.out.println("Test passed: The plant name is correctly 'Mango Tree'.");
         } catch (Exception e) {
@@ -2186,7 +2317,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Sunflower", plantName);
             System.out.println("Test passed: The plant name is correctly 'Sunflower'.");
         } catch (Exception e) {
@@ -2219,7 +2350,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("No plant detected", plantName);
             System.out.println("Test passed: The plant name is correctly 'No plant detected'.");
         } catch (Exception e) {
@@ -2252,7 +2383,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Tiger Tooth Aloe", plantName);
             System.out.println("Test passed: The plant name is correctly 'Tiger Tooth Aloe'.");
         } catch (Exception e) {
@@ -2285,7 +2416,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("California Poppy", plantName);
             System.out.println("Test passed: The plant name is correctly 'California Poppy'.");
         } catch (Exception e) {
@@ -2318,7 +2449,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Sacred Lotus", plantName);
             System.out.println("Test passed: The plant name is correctly 'Sacred Lotus'.");
         } catch (Exception e) {
@@ -2351,7 +2482,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Echeveria", plantName);
             System.out.println("Test passed: The plant name is correctly 'Echeveria'.");
         } catch (Exception e) {
@@ -2384,7 +2515,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Sacred Lotus", plantName);
             System.out.println("Test passed: The plant name is correctly 'Sacred Lotus'.");
         } catch (Exception e) {
@@ -2404,7 +2535,7 @@ public class TestPlantin {
         setUpHelper();// Navigate to directory with plant photos
         try {
             // Use the XPath to find the button and click it
-            MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"unnamed (20).png, 3.3 MB, May 13\"]"));
+            MobileElement plantPicture = (MobileElement) driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"unnamed (67).png, 32.3 MB, May 13\"]"));
             plantPicture.click();
             System.out.println("Button clicked successfully.");
         } catch (Exception e) {
@@ -2417,7 +2548,7 @@ public class TestPlantin {
             String plantName = plantNameElement.getText();
             System.out.println("Found plant name: " + plantName);
 
-            // Assert that the plant name 
+            // Assert that the plant name
             Assert.assertEquals("Rainier Cherry Tree", plantName);
             System.out.println("Test passed: The plant name is correctly 'Rainier Cherry Tree'.");
         } catch (Exception e) {
@@ -2426,6 +2557,7 @@ public class TestPlantin {
         }
         dismissScreen();
     }
+
 
 //    @After
 //    public void tearDown(){
